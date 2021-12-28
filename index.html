@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+    <!-- Aqui esta el link de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Aqui esta el link de estilos -->
+    <link rel="stylesheet" href="./Estilo/estilo.css">
+    <!-- Titulo de la web -->
+    <title>Tu Cuadro</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="./img/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Paginas/galeria.html">Galeria</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Paginas/nuevos.html">Nuevos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Paginas/comprar.html">Comprar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Paginas/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-danger" type="submit">
+                        <i class="text-white">Carrito</i>
+                        <span class="badge bg-danger text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- Slider -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./img/banners/banner1.jpg" class="d-block w-100" alt="Slider1">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/banners/banner3.jpg" class="d-block w-100" alt="Slider2">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/banners/banner2.jpg" class="d-block w-100" alt="Slider3">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previo</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </button>
+        </div>
+
+    </header>
+
+    <section class="py-5">
+        <h1> Aqui esta tu futuro Cuadro</h1>
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- imagen-->
+                        <img class="card-img-top" src="./img/cuadros/avion.png" alt="avion" />
+                        <!-- detalle del cuadro-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- nombre del cuadro-->
+                                <h5 class="fw-bolder">Cuadro Avion</h5>
+                                <!-- Presio del producto-->
+                                $2.500 
+                            </div>
+                        </div>
+                        <!-- accion del boton-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="./Paginas/comprar.html">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- en oferta-->
+                        <div class="badge bg-primary text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Oferta</div>
+                        <!-- imagen-->
+                        <img class="card-img-top" src="./img/cuadros/buda.png" alt="Buda" />
+                        <!-- detalle del cuadro-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- nombre del cuadro -->
+                                <h5 class="fw-bolder">Cuadro Buda</h5>
+                                <!-- Presio del producto-->
+                                $1.000
+                            </div>
+                        </div>
+                        <!-- accion del boton-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="./Paginas/comprar.html">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- en oferta-->
+                        <div class="badge bg-primary text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Mas Vendido</div>
+                        <!-- imagen -->
+                        <img class="card-img-top" src="./img/cuadros/cantante.png" alt="Cantante" />
+                        <!-- detalle del cuadro-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- nombre del cuadro -->
+                                <h5 class="fw-bolder">Cuadro Cantante</h5>
+                                <!-- presio del producto-->
+                                $2.900
+                            </div>
+                        </div>
+                        <!-- accion del boton -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="./Paginas/comprar.html">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- imagen -->
+                        <img class="card-img-top" src="./img/cuadros/faro.png" alt="Faro" />
+                        <!-- detalle del cuadro -->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- nombre del cuadro -->
+                                <h5 class="fw-bolder">Cuadro Faro</h5>
+                                <!-- precio del producto -->
+                                $1.800
+                            </div>
+                        </div>
+                        <!-- accion del boton -->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="./Paginas/comprar.html">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- imagen -->
+                        <img class="card-img-top" src="./img/cuadros/pradera.png" alt="Pradera" />
+                        <!-- detalle del cuadro-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- nombre del cuadro -->
+                                <h5 class="fw-bolder">Caudro Pradera</h5>
+                                <!-- precio del producto -->
+                                <span class="text-muted text-decoration-line-through">
+                                $2.500
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="./Paginas/comprar.html">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Todos los derechos reservados</p><br>
+            <p class="m-0 text-center text-white">Proyecto Final -- Curso de desarrollo web en CoderHouse -- </p>
+        </div>
+    </footer>
+    <!-- Aqui estan los scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
+</body>
+
+
+
+</html>
